@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_signin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="签到"
+        android:padding="20px"
+        android:textStyle="bold"
+        android:textSize="40px" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_signin_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_signin_classList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_signin_class"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:background="#fff"
+        android:columnCount="2"
+        android:padding="8px"
+        android:rowCount="2">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_signin_rule"
+                android:layout_width="0px"
+                android:layout_height="250px"
+                android:layout_margin="8px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sign_in_bg"
+                android:text="常规点名"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/btn_signin_bluetooth"
+                android:layout_width="0px"
+                android:layout_height="250px"
+                android:layout_margin="8px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sign_in_bg"
+                android:text="蓝牙点名"
+                android:textSize="40px" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_signin_scan"
+                android:layout_width="0px"
+                android:layout_height="250px"
+                android:layout_margin="8px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sign_in_bg"
+                android:text="扫描点名"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/btn_signin_attendance_recode"
+                android:layout_width="0px"
+                android:layout_height="250px"
+                android:layout_margin="8px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sign_in_bg"
+                android:text="考勤记录"
+                android:textSize="40px" />
+        </TableRow>
+    </TableLayout>-->
+
+</LinearLayout>

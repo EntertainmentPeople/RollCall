@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageButton
+            android:id="@+id/ib_bluebooth_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@color/white"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="20px"
+            android:text="蓝牙点名"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_blutooth_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_signin_selected"
+            android:text="提交"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_bluetooth_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_marginTop="10px">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bluetooth_student"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_bluetooth_student" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_bluetooth_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="扫描"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/ib_mine_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:background="@color/white"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_signin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:padding="20px"
+            android:text="个人信息"
+            android:textSize="40px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.klj.rollcall.view.CircleImageView
+        android:id="@+id/iv_mineinfo_portrait"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_portrait" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="账号:"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/et_mine_userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:enabled="false"
+            android:paddingLeft="20px"
+            android:textColorHint="#ccc"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名:"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/et_mine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:textColorHint="#ccc"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_mine_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别:"
+            android:textSize="40px" />
+
+        <RadioButton
+            android:id="@+id/rb_mine_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="40px" />
+
+        <RadioButton
+            android:id="@+id/rb_mine_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="女"
+            android:textSize="40px" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄:"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/et_mine_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:textColorHint="#ccc"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mine_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="年级:"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/et_mine_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:enabled="false"
+            android:paddingLeft="20px"
+            android:textColorHint="#ccc"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mine_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="专业:"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/et_mine_major"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:enabled="false"
+            android:paddingLeft="20px"
+            android:textColorHint="#ccc"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="院系:"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/et_mine_dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:enabled="false"
+            android:paddingLeft="20px"
+            android:textColorHint="#ccc"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话:"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/et_mine_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:phoneNumber="true"
+            android:textColorHint="#ccc"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_mine_update"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/btn_login_selected"
+        android:text="修  改"
+        android:textColor="#EFFFFF"
+        android:textSize="20sp" />
+
+</LinearLayout>

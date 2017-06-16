@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">教师点名软件</string>
+
+    <string name="action_search">查询案件</string>
+    <string name="action_message_center">消息中心</string>
+    <string name="action_create">新建</string>
+    <string name="label_massage">消息</string>
+
+    <string name="empty_no_data">没有符合条件的数据！</string>
+    <string name="msg_changePasswordSuccess">密码修改成功，请重新登录！</string>
+
+    <!-- 公共 -->
+    <string name="label_save">保存</string>
+    <string name="label_submit">提交</string>
+    <string name="label_selectAll">全选</string>
+    <string name="label_selectNull">全不选</string>
+    <string name="label_delete">删除</string>
+    <string name="label_read">标为已读</string>
+    <string name="label_cancel">取消</string>
+    <string name="label_search">搜索</string>
+    <string name="label_confirm">确定</string>
+    <string name="label_close">关闭</string>
+    <string name="label_back">返回</string>
+    <string name="label_login">登录</string>
+    <string name="label_retrieve_password">忘记密码?</string>
+    <string name="msg_error_invalidateWebAccess">非法访问路径</string>
+    <string name="msg_loading">加载中,请稍后&#8230;</string>
+    <string name="msg_pulling">请求中,请稍后&#8230;</string>
+    <string name="msg_uploading">请求正在提交,请稍后&#8230;</string>
+
+    <string name="prompt_phone">电话号码</string>
+    <string name="prompt_password">密码</string>
+
+    <string name="navigation_drawer_open">打开</string>
+    <string name="navigation_drawer_close">关闭</string>
+    <string name="title_activity_express_detail">ExpressDetailActivity</string>
+
+    <string name="input_oldPassword">请输入旧密码</string>
+    <string name="input_newPassword">请输入新密码</string>
+    <string name="confirm_newPassword">确认新密码</string>
+
+    <string name="permission">权限(permission)</string>
+    <string name="no_permissions">应用需要必要的运行权限</string>
+
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+
+    <item name="bound_observable" type="id"/>
+</resources>

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="20px"
+        android:text="我的"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:background="@color/white"
+        android:clickable="true"
+        android:padding="10px">
+
+        <com.klj.rollcall.view.CircleImageView
+            android:id="@+id/iv_mime_portrait"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginLeft="20px"
+            android:src="@mipmap/icon_portrait" />
+
+        <TextView
+            android:id="@+id/tv_mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@+id/iv_mime_portrait"
+            android:text="名字"
+            android:textSize="40px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20px"
+            android:src="@mipmap/icon_skip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mine_updatePwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawableEnd="@mipmap/icon_skip"
+            android:padding="20px"
+            android:text="修改密码"
+            android:textSize="40px" />
+
+        <!--<TextView
+            android:id="@+id/tv_mine_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:layout_marginTop="40px"
+            android:drawableEnd="@mipmap/icon_skip"
+            android:padding="20px"
+            android:text="修改密码"
+            android:textSize="40px" />-->
+
+        <TextView
+            android:id="@+id/tv_mine_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawableEnd="@mipmap/icon_skip"
+            android:padding="20px"
+            android:text="退出系统"
+            android:textSize="40px" />
+    </LinearLayout>
+
+
+</LinearLayout>

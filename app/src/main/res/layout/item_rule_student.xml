@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/rl_class_item"
+    android:layout_margin="10px"
+    android:padding="20px">
+
+    <ImageView
+        android:id="@+id/iv_rule_student_portrait"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:background="@mipmap/icon_portrait"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_rule_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@+id/iv_rule_student_portrait"
+        android:text="张三" />
+
+    <TextView
+        android:id="@+id/tv_rule_student_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/tv_rule_student_name"
+        android:text="男" />
+
+    <TextView
+        android:id="@+id/tv_rule_student_sno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rule_student_name"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@+id/iv_rule_student_portrait"
+        android:text="2013010101" />
+
+    <TextView
+        android:id="@+id/tv_rule_student_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rule_student_sno"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@+id/iv_rule_student_portrait"
+        android:text="软件工程" />
+
+    <TextView
+        android:id="@+id/tv_rule_student_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rule_student_sno"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@+id/tv_rule_student_major"
+        android:text="数计学院" />
+
+    <RadioGroup
+        android:id="@+id/rg_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_rule_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="正常" />
+
+        <RadioButton
+            android:id="@+id/rb_rule_late"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="迟到" />
+
+        <RadioButton
+            android:id="@+id/rb_rule_leave_early"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="早退" />
+
+        <RadioButton
+            android:id="@+id/rb_rule_leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="请假" />
+
+        <RadioButton
+            android:id="@+id/rb_rule_absenteeism"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="旷课" />
+    </RadioGroup>
+</RelativeLayout>

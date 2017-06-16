@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_class_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10px"
+    android:background="@color/white"
+    android:padding="20px">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_attend_student_portrait"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_portrait" />
+
+        <TextView
+            android:id="@+id/tv_attend_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/iv_attend_student_portrait"
+            android:text="张三" />
+
+        <TextView
+            android:id="@+id/tv_attend_student_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_attend_student_name"
+            android:text="男" />
+
+        <TextView
+            android:id="@+id/tv_attend_student_sno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_attend_student_name"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/iv_attend_student_portrait"
+            android:text="2013010101" />
+
+        <TextView
+            android:id="@+id/tv_attend_student_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_attend_student_sno"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/iv_attend_student_portrait"
+            android:text="软件工程" />
+
+        <TextView
+            android:id="@+id/tv_attend_student_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_attend_student_sno"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/tv_attend_student_major"
+            android:text="数计学院" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_attend_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正    常：" />
+
+        <TextView
+            android:id="@+id/tv_attend_late"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="迟    到：" />
+
+        <TextView
+            android:id="@+id/tv_attend_leave_early"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="早    退：" />
+
+        <TextView
+            android:id="@+id/tv_attend_absenteeism"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旷    课：" />
+
+        <TextView
+            android:id="@+id/tv_attend_leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请    假：" />
+
+        <TextView
+            android:id="@+id/tv_attend_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总次数：" />
+    </LinearLayout>
+
+</RelativeLayout>

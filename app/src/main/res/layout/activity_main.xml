@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rg_main_menu"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/vp_main"
+        android:background="#ccc"/>
+    <RadioGroup
+        android:id="@+id/rg_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10px"
+        android:paddingBottom="5px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main_syllabus"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/rb_selected_syllabus"
+            android:checked="true"
+            android:text="课表" />
+
+        <RadioButton
+            android:id="@+id/rb_main_sign_in"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/rb_selected_sign_in"
+            android:text="签到" />
+
+        <RadioButton
+            android:id="@+id/rb_main_mine"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/rb_selected_mine"
+            android:text="我的" />
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.klj.rollcall.view.LoadingDialogFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12px"
+        app:cardElevation="4px">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkslategrey"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_element_normal">
+
+            <LinearLayout
+                android:id="@+id/progressContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="200px"
+                android:minWidth="200px"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="80px"
+                    android:layout_height="80px"/>
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_element_normal"
+                    android:textColor="@color/white"
+                    android:text="loading"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</layout>

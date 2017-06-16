@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_signin_selected"
+    android:id="@+id/rl_class_item"
+    android:layout_margin="10px"
+    android:padding="20px">
+
+    <TextView
+        android:id="@+id/tv_class_className"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_class_studentNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

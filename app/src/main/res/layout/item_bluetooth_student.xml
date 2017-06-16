@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_class_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10px"
+    android:background="@color/white"
+    android:padding="20px">
+
+    <TextView
+        android:id="@+id/tv_bluetooth_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:text="张三" />
+
+    <TextView
+        android:id="@+id/tv_bluetooth_student_sno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bluetooth_student_name"
+        android:layout_marginLeft="10px"
+        android:text="2013010101" />
+    <RadioGroup
+        android:id="@+id/rg_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_bluetooth_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="正常" />
+
+        <RadioButton
+            android:id="@+id/rb_bluetooth_late"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="迟到" />
+
+        <RadioButton
+            android:id="@+id/rb_bluetooth_leave_early"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="早退" />
+
+        <RadioButton
+            android:id="@+id/rb_bluetooth_leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="请假" />
+
+        <RadioButton
+            android:id="@+id/rb_bluetooth_absenteeism"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:background="@drawable/rb_rule_selected_signin"
+            android:button="@null"
+            android:gravity="center"
+            android:text="旷课" />
+    </RadioGroup>
+</RelativeLayout>
